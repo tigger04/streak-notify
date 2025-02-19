@@ -1,4 +1,4 @@
-* Streak Notify
+* Streak Notify CLI
 
 A lightweight Python application that displays text notifications with smooth fade-in and fade-out animations in a floating window.
 
@@ -16,7 +16,7 @@ Like a streaker on the pitch - now you see him, now you don't quite trust your m
 - Centred screen positioning
 
 ** Why Python?
-Well modern SwiftUI on MacOS doesn't let you do anything fun like a persistent canvas on top of all othe windows. Always easier to implmenent in other languages like Lua and Python simply because their integration libraries are written in Objective-C which is not deliberatly crippled like Apple's new toy SwiftUI is essentially amputated.
+Well modern SwiftUI on MacOS doesn't let you do anything fun like a persistent canvas on top of all othe windows. Always easier to implmenent in other languages like Lua and Python simply because their integration libraries are written in Objective-C which is not deliberatly crippled like Apple's new toy SwiftUI is essentially an amputee and I feel its neuropathic pain.
 
 ** Requirements
 
