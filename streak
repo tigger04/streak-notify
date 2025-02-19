@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+#shellcheck source=../.qfuncs.sh
+source ~/.qfuncs.sh
+
+set -e
+
+read -r deep_down_who_is_the_real_me < <(realpath "$0")
+read -r i_just_want_to_find_my_roots < <(dirname "$deep_down_who_is_the_real_me")
+
+cd "$i_just_want_to_find_my_roots" || die
+
+. bin/activate
+./streak.py "$@"
