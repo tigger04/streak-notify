@@ -1,0 +1,88 @@
+* Streak Notify
+
+A lightweight Python application that displays text notifications with smooth fade-in and fade-out animations in a floating window.
+
+It is designed to be centred - a little bit "in your face" for persistent reminders for example, but should disappear quickly enough to not be too much in the way or interrupt you from that thing yo uwere doing.
+
+Like a streaker on the pitch - now you see him, now you don't quite trust your memory, was he really there? He's gone!
+
+** Features
+
+- Transparent, frameless window display
+- Smooth fade-in and fade-out animations
+- Configurable display duration and animation timing
+- Customizable appearance (font, colors, padding, corner radius)
+- Always-on-top window behavior
+- Centred screen positioning
+
+** Why Python?
+Well modern SwiftUI on MacOS doesn't let you do anything fun like a persistent canvas on top of all othe windows. Always easier to implmenent in other languages like Lua and Python simply because their integration libraries are written in Objective-C which is not deliberatly crippled like Apple's new toy SwiftUI is essentially amputated.
+
+** Requirements
+
+- Python 3.x
+- PyQt5
+
+** Installation
+
+1. Clone this repository
+2. Create a Python virtual environment
+3. Install the required dependencies:
+
+#+begin_src bash
+python3 -m venv .
+source ./bin/activate
+pip install -r requirements.txt
+#+end_src bash
+
+** Usage
+
+The application reads text from standard input (STDIN) and displays it as a notification. 
+
+Example usage:
+#+begin_src bash
+echo "Hello World!" | python streak.py
+#+end_src
+
+Although we have a nice shell script to handle the virtual env:
+
+#+begin_src bash
+ls -l | streak
+#+end_src
+
+You can symlink the shell script to work from wherever you keep your usual CLI scripts:
+
+#+begin_src bash
+ln -svrn ./streak ~/bin
+#+end_src
+
+** Configuration
+
+The following parameters can be adjusted in the script:
+
+*** Display timing
+- =DISPLAY_TIME_MS=: Duration to show the text (default: 3000ms)
+- =FADE_IN_TIME_MS=: Fade in duration (default: 1000ms)
+- =FADE_OUT_TIME_MS=: Fade out duration (default: 2000ms)
+
+*** Appearance
+- =FONT_FAMILY=: Font to use (default: "Tequila")
+- =FONT_SIZE=: Text size (default: 28)
+- =BACKGROUND_COLOR=: Window background color with opacity
+- =TEXT_COLOR=: Text color
+- =PADDING_PX=: Padding around text (default: 20px)
+- =CORNER_RADIUS_PX=: Corner rounding (default: 15px)
+
+** Where did you get that lovely font?
+[[https://github.com/tigger04/tigger-fonts][My stupid Tequila font is here]] under the SIL Open Font license.
+
+** Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+** License
+
+MIT FTW
+
+** TODO Roadmap if I ever get around to it
+- Make the config parameters for display timing and appearance *configurable via CLI switches* (currently these are vars at the top of the Python script)
