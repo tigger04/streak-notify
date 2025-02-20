@@ -169,5 +169,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
 bin/
+
 pyvenv.cfg
