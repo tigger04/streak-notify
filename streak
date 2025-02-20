@@ -11,4 +11,9 @@ read -r i_just_want_to_find_my_roots < <(dirname "$deep_down_who_is_the_real_me"
 cd "$i_just_want_to_find_my_roots" || die
 
 . bin/activate
-./streak.py "$@"
+
+if [ $# -gt 0 ] ;  then
+   echo "$*" | ./streak.py
+else
+   ./streak.py
+fi
