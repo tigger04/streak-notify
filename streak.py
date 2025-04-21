@@ -5,15 +5,15 @@ The window fades out after a configurable time and closes after the fade animati
 """
 
 # Display configuration
-DISPLAY_TIME_MS = 1000  # How long to show the text (milliseconds)
-FADE_IN_TIME_MS = 500  # Fade in duration (milliseconds)
-FADE_OUT_TIME_MS = 500  # Fade out duration (milliseconds)
+DISPLAY_TIME_MS = 3000  # How long to show the text (milliseconds)
+FADE_IN_TIME_MS = 1000  # Fade in duration (milliseconds)
+FADE_OUT_TIME_MS = 1000  # Fade out duration (milliseconds)
 
 # Appearance configuration
 FONT_FAMILY = "Tequila"
 FONT_SIZE = 28
-BACKGROUND_COLOR = "rgba(0, 0, 255, 0.5)"  # Black with 70% opacity
-TEXT_COLOR = "rgba(190, 190, 190)"
+BACKGROUND_COLOR = "rgba(0, 0, 255, 0.3)"  # Black with 70% opacity
+TEXT_COLOR = "rgba(190, 190, 190, 1)"
 PADDING_PX = 20
 CORNER_RADIUS_PX = 15 # Rounded corner radius
 
