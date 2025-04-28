@@ -5,9 +5,9 @@ The window fades out after a configurable time and closes after the fade animati
 """
 
 # Display configuration
-DISPLAY_TIME_MS = 3000  # How long to show the text (milliseconds)
-FADE_IN_TIME_MS = 1000  # Fade in duration (milliseconds)
-FADE_OUT_TIME_MS = 1000  # Fade out duration (milliseconds)
+DISPLAY_TIME_MS = 1000  # How long to show the text (milliseconds)
+FADE_IN_TIME_MS = 500  # Fade in duration (milliseconds)
+FADE_OUT_TIME_MS = 500  # Fade out duration (milliseconds)
 
 # Appearance configuration
 FONT_FAMILY = "Tequila"
